@@ -19,6 +19,10 @@ app.get("/", (req, res) => {
 const productRoute = require("./routes/productRoute");
 app.use("/product", productRoute , cors());
 
+const adminRoute = require("./routes/userRoute");
+app.use("/admin", adminRoute , cors());
+
+
 app.listen(5000, () => {
   console.log(`Server running on port 5000`);
 });
