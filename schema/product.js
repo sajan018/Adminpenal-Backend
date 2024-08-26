@@ -14,7 +14,7 @@ const productSchema = new mongoose.Schema({
     required: true,
   },
   productPrice: {
-    type: Number,
+    type: String,
     required: true
   },
   productQuantity: {
@@ -25,7 +25,18 @@ const productSchema = new mongoose.Schema({
     type:String,
     required:true
   },
-  productDescription: {
+  features:{
+    type:[String],
+  },
+  condition:{
+    type:String,
+    required:true
+  },
+  fuelType:{
+    type:String,
+    required:true
+  },
+  productDescription:{
     type: String,
     required:true
   },
